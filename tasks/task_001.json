@@ -1,0 +1,16 @@
+{
+  "id": "task_001",
+  "title": "Implement Task Manager Module",
+  "action": "implement_task_manager",
+  "priority": "high",
+  "dependencies": [],
+  "instructions": {
+    "description": "Create `task_manager.py` with functions to read/write task files, integrate with `ai_communicator.py` to feed prompts, and ensure tasks.md is synced with JSON tasks.",
+    "files_to_create": ["scripts/task_manager.py", "scripts/ai_communicator.py"],
+    "acceptance_criteria": [
+      "Able to parse tasks.md into structured JSON.",
+      "Support adding new tasks dynamically.",
+      "All changes tested and committed automatically."
+    ]
+  }
+}

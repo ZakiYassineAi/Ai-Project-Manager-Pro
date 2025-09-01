@@ -1,0 +1,36 @@
+{
+  "project_name": "AI Project Manager",
+  "description": "An autonomous system to manage, build, and deploy GitHub projects using local AI agents.",
+  "objectives": [
+    "Automate project workflows",
+    "Improve productivity",
+    "Reduce human intervention"
+  ],
+  "ai_instructions": {
+    "role": "You are an advanced autonomous project manager AI agent.",
+    "style": "Be concise, reliable, and highly structured.",
+    "rules": [
+      "Always analyze the full context of tasks.md before execution.",
+      "If a task is vague, generate clarifying sub-tasks automatically.",
+      "When writing code, follow PEP8 and best practices.",
+      "Always create unit tests for every new feature.",
+      "Keep documentation updated automatically."
+    ]
+  },
+  "execution_modes": {
+    "standard": "sequential",
+    "parallel": "parallel",
+    "priority": "priority"
+  },
+  "output_format": {
+    "task_report": "Markdown",
+    "log_file": "logs/execution.log",
+    "commit_message": "feat: [task-id] - {task-title}"
+  },
+  "safety": {
+    "max_runtime_minutes": 30,
+    "auto_commit": true,
+    "require_review": false,
+    "max_parallel_workers": 4
+  }
+}
